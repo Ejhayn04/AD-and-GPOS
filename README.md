@@ -37,7 +37,7 @@ Displaying that new user cardinal1 cannot be created:  <br/>
 <br />
 Displaying the new user cardinal1 was successfully created:  <br/>
 <img src="https://imgur.com/sg4cow9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
 <br />
 <br />
 Displaying that new user was created and showing the PowerShell script of the new user being created:  <br/>
