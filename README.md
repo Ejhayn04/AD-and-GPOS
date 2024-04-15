@@ -1,14 +1,13 @@
 <h1>AD and GPOS</h1>
 
 <h2>Description</h2>
-This lab demonstrates the creation of a firewall through Ubuntu Linux.
+This lab demonstrates the creation of a AD/GPO User Groupa through SQL.
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>Linux</b> 
-- <b>Ubuntu</b>
+- <b>SQL</b> 
 
 <h2>Environments Used </h2>
 
@@ -16,48 +15,33 @@ This lab demonstrates the creation of a firewall through Ubuntu Linux.
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Finding IP Address: <br/>
-<img src="https://imgur.com/KL8T1mH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Creating Three Domain Users: <br/>
+<img src="https://imgur.com/bkioK36.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Performing a Nmap Scan:  <br/>
-<img src="https://imgur.com/K3rGwT6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Displaying SQL Group has been created:  <br/>
+<img src="https://imgur.com/tFUpYIF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Captured Packets on Wireshark (wget): <br/>
-<img src="https://imgur.com/HKtJzwI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Displaying sqluser1 is a part of the domain admins and SQL group (wget): <br/>
+<img src="https://imgur.com/Teu78Vx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Captured Packets on Wireshark (ssh):  <br/>
-<img src="https://imgur.com/lk4snWP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Showing that we have logged in as sqluser1:  <br/>
+<img src="https://imgur.com/3lk0lDM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Captured Packets on Wireshark (telnet):  <br/>
-<img src="https://imgur.com/grIiE7n.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Displaying that new user cardinal1 cannot be created:  <br/>
+<img src="https://imgur.com/tkoAMee.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Using iptables to limit traffic to the server:  <br/>
-<img src="https://imgur.com/nM3ux0U.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Displaying the new user cardinal1 was successfully created:  <br/>
+<img src="https://imgur.com/sg4cow9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Showing that HTTP Traffic is allowed:  <br/>
-<img src="https://imgur.com/kJx2puS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Displaying that new user was created and showing the PowerShell script of the new user being created:  <br/>
+<img src="https://imgur.com/JkpfUXR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Showing that Telnet Traffic is blocked: <br/>
-<img src="https://imgur.com/IkeoQNx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Performing Nmap scan on the client for open ports on the server:  <br/>
-<img src="https://imgur.com/sMgAfEH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Opening a new service port; Showing that Wizbang traffic is allowed:  <br/>
-<img src="https://imgur.com/cT6imRM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Final Nmap Scan:  <br/>
-<img src="https://imgur.com/b2I12QB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+
